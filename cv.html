@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valery Buinich CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .section h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .top-header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+    .top-contacts {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+    .top-photo-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+    }
+    .top-photo-links img {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+    .skills li {
+      list-style: disc;
+      margin-left: 1rem;
+    }
+    @media (max-width: 600px) {
+      .top-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .top-photo-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      .links {
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-header">
+      <h1>Valery Buinich</h1>
+      <p class="subtitle">Python Backend Developer</p>
+    </div>
+
+    <div class="top-contacts">
+      <p>Email: <a href="mailto:buinichvalery@gmail.com">buinichvalery@gmail.com</a></p>
+      <p>Phone: <a href="tel:+375296281663">+375296281663</a></p>
+      <p>Location: Belarus, Minsk</p>
+    </div>
+
+    <div class="top-photo-links">
+      <img src="photo_5197671337907319951_y.jpg" alt="Profile Photo" />
+      <div class="links">
+        <p><a href="https://www.linkedin.com/in/valery-buinich-482996359/"><img src="linkedin.png" alt="linkedin Photo" style= "width:50px;height: 50px;"/></img></a></p>
+        <p><a href="https://github.com/zxceulsed"><img src="github-mark.png" alt="Github Photo" style= "width:50px;height: 50px;"/></img></a></p>
+        <p><a href="https://t.me/zxceulsed"><img src="telegram.png" alt="Telegram Photo" style= "width:50px;height: 50px;"/></img></a></p>
+        <p><a href="https://kwork.ru/user/valerion_dev"><img src="kwork.png" alt="Kwork Photo" style= "width:50px;height: 50px;"/></img></a></p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>О себе</h2>
+      <p>Ответственный разработчик с опытом создания ботов, автоматизации и взаимодействия с API. Люблю чистый код, оптимальные архитектурные решения и котов в костюмах.</p>
+    </div>
+
+    <div class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li>
+          <strong>Steam-мониторинг скинов:</strong> Бот отслеживает торговую площадку Steam, проверяя float-значения скинов через API. Отправляет оповещения в Telegram с деталями. Работа с cookie для авторизации.
+        </li>
+        <li>
+          <strong>Бот для мультипубликации:</strong> Отслеживает новые посты в Telegram-группе и публикует их в VK и Одноклассники через API после подтверждения.
+        </li>
+        <li>
+          <strong>Автозагрузка изображений с Boosty:</strong> Скачивает все изображения со страницы Boosty по ссылке. Проверка дубликатов по хэшу.
+        </li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Git</li>
+        <li>MySQL / PostgreSQL</li>
+        <li>Понимание основных принципов проектирования</li> 
+        <li>Знание базовых паттернов проектирования.</li> 
+        <li>Python</li>
+        <li>BeautifulSoup4</li>
+        <li>Requests</li>
+        <li>Aiogram3</li>
+        <li>Selenium</li>
+        <li>Pyrogram</li>
+        <li>Gspread</li>
+      </ul>
+      <div class="section">
+        <h2>Education</h2>
+        <p><strong>BNTU</strong><br>
+        Инженер-Педагог. Прикладное программирование (2023 - Настоящее время)</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
