@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Valery Buinich CV</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=otKHvlbrLtEg818DJ2hLvHMeL-fqab2eiBeRDu9V7vuZOgkjlAQzYBxvysQj13A-7hFs3OM-wAY_uGrixbBDDg" charset="UTF-8"></script><style>
+  <style>
     * {
       box-sizing: border-box;
     }
@@ -72,7 +72,7 @@
       font-size: 0.95rem;
     }
 
-    .photo_class{
+    .photo_class {
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -80,31 +80,25 @@
     }
 
     .top-photo-links {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      gap: 2rem;
-      flex-wrap: wrap;
-      margin-bottom: 2rem;
-      justify-content: space-around;
-    }
-    .top-photo-links{
       width: 300px;
       height: 300px;
       border-radius: 8px;
       object-fit: cover;
       border: 2px solid #ccc;
     }
+
     .links {
       display: flex;
       flex-direction: row;
       gap: 0.4rem;
       justify-content: space-around;
     }
+
     .skills li {
       list-style: disc;
       margin-left: 1rem;
     }
+
     @media (max-width: 600px) {
       .top-header {
         flex-direction: column;
@@ -115,18 +109,15 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
-      } 
-       
       }
+    }
 
-      @media (max-width: 400px) {
+    @media (max-width: 400px) {
       .top-photo-links {
         width: 200px;
         height: 200px;
+      }
     }
-
-}
-  
   </style>
 </head>
 <body>
@@ -143,31 +134,35 @@
     </div>
 
     <div class="photo_class">
-      <img class="top-photo-links" src="photo_5197671337907319951_y.jpg" alt="Profile Photo">  </img>
+      <img class="top-photo-links" src="photo_5197671337907319951_y.jpg" alt="Profile Photo" loading="lazy">
     </div>
+
     <div class="links">
-      <a href="https://www.linkedin.com/in/valery-buinich-482996359/"><img src="linkedin.png" alt="linkedin Photo" style= "width:50px;height: 50px;"/></img></a>
-      <a href="https://github.com/zxceulsed"><img src="github-mark.png" alt="Github Photo" style= "width:50px;height: 50px;"/></img></a>
-      <a href="https://t.me/zxceulsed"><img src="telegram.png" alt="Telegram Photo" style= "width:50px;height: 50px;"/></img></a>
-      <a href="https://kwork.ru/user/valerion_dev"><img src="kwork.png" alt="Kwork Photo" style= "width:50px;height: 50px;"/></img></a>
+      <a href="https://www.linkedin.com/in/valery-buinich-482996359/">
+        <img src="linkedin.png" alt="LinkedIn" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://github.com/zxceulsed">
+        <img src="github-mark.png" alt="GitHub" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://t.me/zxceulsed">
+        <img src="telegram.png" alt="Telegram" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://kwork.ru/user/valerion_dev">
+        <img src="kwork.png" alt="Kwork" style="width:50px;height:50px;" loading="lazy">
+      </a>
     </div>
 
     <div class="section">
       <h2>О себе</h2>
       <p>Ответственный разработчик с опытом создания ботов, автоматизации и взаимодействия с API. Люблю чистый код, оптимальные архитектурные решения и котов в костюмах.</p>
     </div>
+
     <div class="section">
       <h2>Проекты</h2>
       <ul>
-        <li>
-          <strong>Steam-мониторинг скинов:</strong> Бот отслеживает торговую площадку Steam, проверяя float-значения скинов через API. Отправляет оповещения в Telegram с деталями. Работа с cookie для авторизации.
-        </li>
-        <li>
-          <strong>Бот для мультипубликации:</strong> Отслеживает новые посты в Telegram-группе и публикует их в VK и Одноклассники через API после подтверждения.
-        </li>
-        <li>
-          <strong>Автозагрузка изображений с Boosty:</strong> Скачивает все изображения со страницы Boosty по ссылке. Проверка дубликатов по хэшу.
-        </li>
+        <li><strong>Steam-мониторинг скинов:</strong> Бот отслеживает торговую площадку Steam, проверяя float-значения скинов через API. Отправляет оповещения в Telegram с деталями. Работа с cookie для авторизации.</li>
+        <li><strong>Бот для мультипубликации:</strong> Отслеживает новые посты в Telegram-группе и публикует их в VK и Одноклассники через API после подтверждения.</li>
+        <li><strong>Автозагрузка изображений с Boosty:</strong> Скачивает все изображения со страницы Boosty по ссылке. Проверка дубликатов по хэшу.</li>
       </ul>
     </div>
 
@@ -176,8 +171,8 @@
       <ul class="skills">
         <li>Git</li>
         <li>MySQL / PostgreSQL</li>
-        <li>Понимание основных принципов проектирования</li> 
-        <li>Знание базовых паттернов проектирования.</li> 
+        <li>Понимание основных принципов проектирования</li>
+        <li>Знание базовых паттернов проектирования</li>
         <li>Python</li>
         <li>BeautifulSoup4</li>
         <li>Requests</li>
@@ -186,16 +181,16 @@
         <li>Pyrogram</li>
         <li>Gspread</li>
       </ul>
-      <div class="section">
-        <h2>Языки</h2>
-        <p>Русский: Родной<br>
-        Английский: B1</p>
-      </div>
-      <div class="section">
-        <h2>Образование</h2>
-        <p><strong>БНТУ</strong><br>
-        Инженер-Педагог. Прикладное программирование (2023 - Настоящее время)</p>
-      </div>
+    </div>
+
+    <div class="section">
+      <h2>Языки</h2>
+      <p>Русский: Родной<br>Английский: B1</p>
+    </div>
+
+    <div class="section">
+      <h2>Образование</h2>
+      <p><strong>БНТУ</strong><br>Инженер-Педагог. Прикладное программирование (2023 - Настоящее время)</p>
     </div>
   </div>
 </body>
