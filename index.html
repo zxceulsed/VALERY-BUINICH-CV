@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Valery Buinich CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    }
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .subtitle {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+    .section {
+      margin-top: 2rem;
+    }
+    .section h2 {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .top-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .top-header img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+    .top-contacts {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .photo_class {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+    }
+
+    .top-photo-links {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+      object-fit: cover;
+      border: 2px solid #ccc;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: row;
+      gap: 0.4rem;
+      justify-content: space-around;
+      margin-top: 1.25rem; 
+    }
+
+
+    .skills li {
+      list-style: disc;
+      margin-left: 1rem;
+    }
+
+    @media (max-width: 600px) {
+      .top-header {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+      .top-photo-links {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .top-photo-links {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-header">
+      <h1>Valery Buinich</h1>
+      <p class="subtitle">Python Backend Developer</p>
+    </div>
+
+    <div class="top-contacts">
+      <p>Email: <a href="mailto:buinichvalery@gmail.com">buinichvalery@gmail.com</a></p>
+      <p>Phone: <a href="tel:+375296281663">+375296281663</a></p>
+      <p>Location: Belarus, Minsk</p>
+    </div>
+
+    <div class="photo_class">
+      <img class="top-photo-links" src="photo_5197671337907319951_y.jpg" alt="Profile Photo" loading="lazy">
+    </div>
+
+    <div class="links">
+      <a href="https://www.linkedin.com/in/valery-buinich-482996359/">
+        <img src="linkedin.png" alt="LinkedIn" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://github.com/zxceulsed">
+        <img src="github-mark.png" alt="GitHub" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://t.me/zxceulsed">
+        <img src="telegram.png" alt="Telegram" style="width:50px;height:50px;" loading="lazy">
+      </a>
+      <a href="https://kwork.ru/user/valerion_dev">
+        <img src="kwork.png" alt="Kwork" style="width:50px;height:50px;" loading="lazy">
+      </a>
+    </div>
+
+    <div class="section">
+      <h2>О себе</h2>
+      <p> Пишу на Python и свободно работаю с разными библиотеками; выполнял разнообразные фриланс-проекты — от разработки ботов до парсинга и автоматизации задач; быстро учусь новым технологиям, люблю чистый, поддерживаемый код и эффективное командное взаимодействие.</p>
+    </div>
+
+    <div class="section">
+      <h2>Проекты</h2>
+      <ul>
+        <li><strong>Steam-мониторинг скинов:</strong> Бот отслеживает торговую площадку Steam, проверяя float-значения скинов через API. Отправляет оповещения в Telegram с деталями. Работа с cookie для авторизации. <a href="https://github.com/zxceulsed/steam-parser" target="_blank">Steam Skin Monitor</a></li>
+        <li><strong>Бот для мультипубликации:</strong> Отслеживает новые посты в Telegram-группе и публикует их в VK и Одноклассники через API. <a href="https://github.com/zxceulsed/telegram-crossposter" target="_blank">Telegram → VK/OK Crossposter</a></li>
+        <li><strong>Бот заказов из Китая:</strong> Позволяет формировать единый заказ из нескольких товаров с разных китайских площадок; добавлять, удалять или отменять позиции; по завершении оформления весь список автоматически отправляется менеджеру. <a href="https://github.com/zxceulsed/china-order-bot" target="_blank">China Order Bot</a></li>
+        <li><strong>Автозагрузка изображений с Boosty:</strong> Скачивает все изображения со страницы Boosty по ссылке. Проверка дубликатов по хэшу. <a href="https://github.com/zxceulsed/BoostyImageDownloader" target="_blank">Boosty Image Downloader</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Навыки</h2>
+      <ul class="skills">
+        <li>Git</li>
+        <li>MySQL / PostgreSQL</li>
+        <li>Понимание основных принципов проектирования</li>
+        <li>Знание базовых паттернов проектирования</li>
+        <li>Network</li>
+        <li>Rest</li>
+        <li>Linux</li>
+        <li>Python</li>
+        <li>Django</li>
+        <li>Docker</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Языки</h2>
+      <p>Русский: Родной<br>Английский: B1</p>
+    </div>
+
+    <div class="section">
+      <h2>Образование</h2>
+      <p><strong>БНТУ</strong><br>Педагог-Программист. Прикладное программирование (2023 - Настоящее время)</p>
+    </div>
+  </div>
+</body>
+</html>
